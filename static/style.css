@@ -37,6 +37,17 @@ a {
     text-decoration: none;
 }
 
+pre {
+    margin: 0;
+    line-height: 1.4rem;
+}
+
+#ascii {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
 .doubleheight {
     font-family: "Teletext50-extracondensed", monospace;
     font-size: 40px;
