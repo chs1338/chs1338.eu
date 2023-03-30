@@ -37,6 +37,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #ffff00;
+}
+
 pre {
     margin: 0;
     line-height: 1.4rem;
