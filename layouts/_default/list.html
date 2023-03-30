@@ -3,7 +3,7 @@
 {{ partial "flashtext.html" (dict "dh" "true" "text" .Title) }}
 {{ .Content }}
 <section>
-{{- range .Pages.ByParam "p" }}
+{{- range sort (.Pages.ByParam "p") }}
 <div class="list yellow bluebg">
 <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a><div class="separator"></div><span>{{- if .Params.p }}{{ .Params.p }}{{ else }}000{{- end -}}</span>
 </div>
