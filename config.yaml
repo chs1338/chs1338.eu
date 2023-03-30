@@ -7,6 +7,7 @@ params:
   dateFormat: 'Mon 02. 01. 2006 @ 15:04'
   favicon: 'favicon.svg'
   stylesheet: 'style.css'
+  description: 'a group of talented individuals who share a common interest in pursuing excellence in gaming and music'
 
 disableKinds: ["taxonomy", "taxonomyTerm"]
 
