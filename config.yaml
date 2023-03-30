@@ -1,0 +1,24 @@
+baseURL: 'https://chs1338.eu'
+languageCode: en
+title: 'chs1338.eu'
+enableRobotsTXT: true
+
+params:
+  dateFormat: 'Mon 02. 01. 2006 @ 15:04'
+  favicon: 'favicon.svg'
+  stylesheet: 'style.css'
+
+disableKinds: ["taxonomy", "taxonomyTerm"]
+
+outputs:
+  section:
+  - HTML
+  taxonomy:
+  - HTML
+  term:
+  - HTML
+
+outputFormats:
+  rss:
+    mediaType: application/rss+xml
+    basename: rss

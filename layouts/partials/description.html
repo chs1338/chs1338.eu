@@ -1,0 +1,8 @@
+{{- with .Description }}{{ . }}
+{{- else }}
+    {{- if or .IsPage .IsSection }}
+        {{- .Summary | default (printf "%s | %s" .Title  .Site.Title) }}
+    {{- else -}}
+        {{ .Site.Title }}
+    {{- end -}}
+{{- end -}}

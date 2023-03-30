@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Teletext50";
+    src: url('Teletext50.otf');
+}
+
+@font-face {
+    font-family: "Teletext50-extracondensed";
+    src: url('Teletext50-extracondensed.otf');
+}
+
+body {
+    font-family: "Teletext50", monospace;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    max-width: 40rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+main {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+footer > h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.doubleheight {
+    font-family: "Teletext50-extracondensed", monospace;
+    font-size: 40px;
+}
+
+h1.doubleheight {
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator {
+    flex-grow: 1;
+    border-bottom: dotted 3px #ffff00;
+    margin: 5px 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+p.center {
+    margin: 0;
+}
+
+.flexspread {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flashing {
+    animation: flashing 1.3s steps(5, start) infinite;
+}
+
+@keyframes flashing {
+    to {
+        visibility: hidden;
+    }
+}
+
+.black,
+a.black,
+.black a {
+    color: #000000;
+}
+
+.red,
+a.red,
+.red a {
+    color: #ff0000;
+}
+
+.green,
+a.green,
+.green a {
+    color: #00ff00;
+}
+
+.yellow,
+a.yellow,
+.yellow a {
+    color: #ffff00;
+}
+
+.blue,
+a.blue,
+.blue a {
+    color: #0000ff;
+}
+
+.magenta,
+a.magenta,
+.magenta a {
+    color: #ff00ff;
+}
+
+.cyan,
+a.cyan,
+.cyan a {
+    color: #00ffff;
+}
+
+.white,
+a.white,
+.white a {
+    color: #ffffff;
+}
+
+.blackbg {
+    background-color: #000000;
+}
+
+.redbg {
+    background-color: #ff0000;
+}
+
+.greenbg {
+    background-color: #00ff00;
+}
+
+.yellowbg {
+    background-color: #ffff00;
+}
+
+.bluebg {
+    background-color: #0000ff;
+}
+
+.magentabg {
+    background-color: #ff00ff;
+}
+
+.cyanbg {
+    background-color: #00ffff;
+}
+
+.whitebg {
+    background-color: #ffffff;
+}
+
+@media all and (max-width: 650px) {
+    #ascii {
+        display: none;
+    }
+
+    .flexspread {
+        flex-wrap: wrap;
+    }
+}

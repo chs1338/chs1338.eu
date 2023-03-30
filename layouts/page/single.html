@@ -1,0 +1,6 @@
+{{- define "main" -}}
+<main>
+{{ partial "flashtext.html" (dict "dh" true "text" .Title) }}
+{{ .Content }}
+</main>
+{{- end }}

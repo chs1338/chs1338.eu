@@ -1,0 +1,5 @@
+{{- if .dh -}}
+<h1 class="doubleheight yellow bluebg"><span class="flashing">*</span> {{ .text | upper }} <span class="flashing">*</span></h1>
+{{- else -}}
+<h1 class="yellow bluebg"><span class="flashing">*</span> {{ .text | upper }} <span class="flashing">*</span></h1>
+{{- end -}}

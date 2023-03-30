@@ -1,0 +1,9 @@
+{{- define "main" -}}
+<main>
+{{ partial "flashtext.html" (dict "dh" "true" "text" .Title) }}
+<article>
+<p class="magenta"><time datetime="{{ .Date }}">{{ .Date | time.Format .Site.Params.dateFormat }}</time></p>
+{{ .Content }}
+</article>
+</main>
+{{- end }}

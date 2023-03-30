@@ -1,0 +1,5 @@
+{{- range .Site.Data.member_list -}}
+{{- range . -}}
+<p class="center">{{ . | upper }}</p>
+{{- end -}}
+{{- end -}}

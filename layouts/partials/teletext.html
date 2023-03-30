@@ -1,0 +1,29 @@
+<script type="application/javascript">
+    var init = function () {
+        window.setInterval(updateClock, 1000);
+        window.setTimeout(updateCounter, 100);
+    }
+    var addleadingzero = function (number) {
+        return (number < 10 ? "0" : "") + number;
+    }
+    var dayofweek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var updateClock = function () {
+        var d = new Date();
+        document.getElementById("date").innerHTML = dayofweek[d.getDay()] + " " + addleadingzero(d.getDate()) + ". " + addleadingzero(d.getMonth() + 1);
+        document.getElementById("time").innerHTML = addleadingzero(d.getHours()) + ":" + addleadingzero(d.getMinutes()) + "/" + addleadingzero(d.getSeconds());
+    }
+    var counter = 100;
+    var updateCounter = function () {
+        document.getElementById("counter").innerHTML = counter;
+        counter += 1;
+        if (counter > 199) {
+            counter = 100;
+        }
+        if (Math.random() < 0.05) {
+            window.setTimeout(updateCounter, 1000 + Math.random() * 3000);
+        } else {
+            window.setTimeout(updateCounter, 100);
+        }
+    }
+    window.onload = init;
+</script>
