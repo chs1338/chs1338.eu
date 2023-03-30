@@ -1,8 +1,4 @@
 <script type="application/javascript">
-    var init = function () {
-        window.setInterval(updateClock, 1000);
-        window.setTimeout(updateCounter, 100);
-    }
     var addleadingzero = function (number) {
         return (number < 10 ? "0" : "") + number;
     }
@@ -20,10 +16,12 @@
             counter = 100;
         }
         if (Math.random() < 0.05) {
-            window.setTimeout(updateCounter, 1000 + Math.random() * 3000);
+            setTimeout(updateCounter, 1000 + Math.random() * 3000);
         } else {
-            window.setTimeout(updateCounter, 100);
+            setTimeout(updateCounter, 100);
         }
     }
-    window.onload = init;
+    setInterval(updateClock, 1000);
+    setTimeout(updateCounter, 100);
+    updateClock();
 </script>

@@ -10,4 +10,3 @@
 {{- range .AlternativeOutputFormats }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
 {{- end }}
-{{ partial "teletext.html" . }}
