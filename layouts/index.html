@@ -1,12 +1,14 @@
 {{- define "main" -}}
 <main>
-{{ range (where .Site.Pages "Type" "==" "page") }}
+{{ range (where .Site.Pages "Type" "page") }}
+{{ if (ne .Section "update") }}
 {{ range .Pages.ByParam "p" }}
 <div class="list yellow bluebg">
 <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a><div class="separator"></div><span>{{ .Params.p }}</span>
 </div>
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 {{ partial "asciiflash.html" . }}
 {{ partial "flashtext.html" (dict "text" "ABOUT")}}
 {{ .Content }}
