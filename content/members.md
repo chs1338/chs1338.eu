@@ -1,5 +1,6 @@
 ---
 title: "Members"
+type: page
 p: 101
 ---
 

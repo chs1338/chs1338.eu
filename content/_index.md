@@ -1,5 +1,6 @@
 ---
 title: "CHS1338.EU"
+type: page
 p: 100
 ---
 

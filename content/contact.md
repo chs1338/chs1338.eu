@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+type: page
 p: 102
 ---
 
