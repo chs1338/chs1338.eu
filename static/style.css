@@ -11,8 +11,8 @@
 body {
     font-family: "Teletext50", monospace;
     font-size: 20px;
-    color: #ffffff;
-    background: #000000;
+    color: #fff;
+    background: #000;
     max-width: 40rem;
     padding: 1rem;
     margin: 0 auto;
@@ -22,11 +22,15 @@ main {
     text-align: justify;
 }
 
+nav {
+    margin-block: 2px;
+}
+
 h1 {
     text-align: center;
     font-weight: normal;
     font-size: 20px;
-    margin: 20px 0;
+    margin-block: 5px;
 }
 
 footer > h1 {
@@ -39,7 +43,7 @@ a {
 }
 
 a:hover {
-    color: #ffff00;
+    color: #ff0;
 }
 
 pre {
@@ -48,7 +52,7 @@ pre {
 }
 
 #ascii {
-    margin: 20px 0;
+    margin-block: 20px;
     display: flex;
     justify-content: center;
 }
@@ -69,7 +73,7 @@ h1.doubleheight {
 
 .separator {
     flex-grow: 1;
-    border-bottom: dotted 3px #ffff00;
+    border-bottom: dotted 3px #ff0;
     margin: 5px 5px;
 }
 
@@ -99,81 +103,81 @@ p.center {
 .black,
 a.black,
 .black a {
-    color: #000000;
+    color: #000;
 }
 
 .red,
 a.red,
 .red a {
-    color: #ff0000;
+    color: #f00;
 }
 
 .green,
 a.green,
 .green a {
-    color: #00ff00;
+    color: #0f0;
 }
 
 .yellow,
 a.yellow,
 .yellow a {
-    color: #ffff00;
+    color: #ff0;
 }
 
 .blue,
 a.blue,
 .blue a {
-    color: #0000ff;
+    color: #00f;
 }
 
 .magenta,
 a.magenta,
 .magenta a {
-    color: #ff00ff;
+    color: #f0f;
 }
 
 .cyan,
 a.cyan,
 .cyan a {
-    color: #00ffff;
+    color: #0ff;
 }
 
 .white,
 a.white,
 .white a {
-    color: #ffffff;
+    color: #fff;
 }
 
 .blackbg {
-    background-color: #000000;
+    background-color: #000;
 }
 
 .redbg {
-    background-color: #ff0000;
+    background-color: #f00;
 }
 
 .greenbg {
-    background-color: #00ff00;
+    background-color: #0f0;
 }
 
 .yellowbg {
-    background-color: #ffff00;
+    background-color: #ff0;
 }
 
 .bluebg {
-    background-color: #0000ff;
+    background-color: #00f;
 }
 
 .magentabg {
-    background-color: #ff00ff;
+    background-color: #f0f;
 }
 
 .cyanbg {
-    background-color: #00ffff;
+    background-color: #0ff;
 }
 
 .whitebg {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 @media all and (max-width: 650px) {
