@@ -1,5 +1,5 @@
 ---
-title: "CHS1338.EU"
+title: "Homepage"
 type: page
 p: 100
 ---
